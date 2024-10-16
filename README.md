@@ -29,15 +29,18 @@ Reconstructing 3D coronary arteries is important for coronary artery disease dia
 <p align="center">
 <img src="Pic/intro.png" width="70%">
 </p>
-## Cloning the Repository
 
-```
-git clone --recurse-submodules https://github.com/windrise/3DGR-CAR.git
-```
 
 
 
 ## Installation
+
+### Cloning the Repository
+
+```
+$ git clone --recurse-submodules https://github.com/windrise/3DGR-CAR.git
+$ cd 3DGR-CAR
+```
 
 ```
   # it is recommanded to use conda
