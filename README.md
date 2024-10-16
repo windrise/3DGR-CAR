@@ -5,7 +5,7 @@
 Authors: Xueming Fu, Yingtai Li, Fenghe Tang, Jun Li, Mingyue Zhao, Gao-Jun Teng and S. Kevin Zhou
 
 <!--
-[![arxiv paper](https://img.shields.io/badge/arxiv-paper-orange)](https://github.com/windrise/3DGR-CAR/tree/main)
+[![arxiv paper](https://img.shields.io/badge/arxiv-paper-orange)]([https://github.com/windrise/3DGR-CAR/tree/main](https://arxiv.org/abs/2410.00404))
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![authors](https://img.shields.io/badge/by-windrise-green)](https://github.com/windrise)
 -->
@@ -29,39 +29,91 @@ Reconstructing 3D coronary arteries is important for coronary artery disease dia
 <p align="center">
 <img src="Pic/intro.png" width="70%">
 </p>
+## Cloning the Repository
+
+```
+git clone --recurse-submodules https://github.com/windrise/3DGR-CAR.git
+```
+
+
 
 ## Installation
 
 ```
   # it is recommanded to use conda
-  conda create -n 3dgs-car python=3.9
-  conda activate 3dgs-car
+$ conda create -n 3dgs-car python=3.9
+$ conda activate 3dgs-car
   
-  # install dependencies
-  pip install -r requirements.txt
+  # install dependencies(you can adjust according to your demand)
+  # torch 2.0.0 + cuda 11.7
+$ pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1
   
-  # gaussian splatting 
-  git clone --recursive https://github.com/graphdeco-inria/diff-gaussian-rasterization.git
-  pip install ./diff-gaussian-rasterization
+$ pip install -r requirements.txt
+$ pip install -e gaussian-splatting/submodules/diff-gaussian-rasterization/
+$ pip install -e gaussian-splatting/submodules/simple-knn/
   
-  # simple-knn
-  pip install ./simple-knn
   
 ```
 
+###   Install  [ODL](https://github.com/odlgroup/odl) from source manually.
+
+There may be a conflict with the numpy package here.
+
+```shell
+#Clone ODL from git:
+$ git clone https://github.com/odlgroup/odl
+
+#Install ODL
+$ cd odl
+$ pip install [--user] --editable .
+
+#Install ASTRA for X-ray tomography
+#https://odlgroup.github.io/odl/getting_started/installing_extensions.html
+$ conda install -c astra-toolbox astra-toolbox
+```
+
+
+
 ## Dataset
-We use dataset from .[ASOCA](https://asoca.grand-challenge.org/) and .[ImageCAS](https://github.com/XiaoweiXu/ImageCAS-A-Large-Scale-Dataset-and-Benchmark-for-Coronary-Artery-Segmentation-based-on-CT). 
+
+We use public dataset from [ASOCA](https://asoca.grand-challenge.org/) and [ImageCAS](https://github.com/XiaoweiXu/ImageCAS-A-Large-Scale-Dataset-and-Benchmark-for-Coronary-Artery-Segmentation-based-on-CT). 
+
+## Demo
+
+
+```python
+python train.py
+```
 
 
 
+
+
+
+### Cuda Version!!!
+
+```python
+# Modify the Path to 'discretize_grid.cu' in 'utils/Compute_intensity.py'.
+# Compilation is required for first use, which takes a long time.
+
+
+```
 
 ## 🤝Acknowledgement
 
-Our repo is built upon .[Gasussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting) [Splat image](https://github.com/szymanowiczs/splatter-image) and [NeRP](https://github.com/liyues/NeRP). Thanks to their work.
+Our repo is built upon [Gasussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting), [Splat image](https://github.com/szymanowiczs/splatter-image), [NeRP](https://github.com/liyues/NeRP) and [ODL](https://github.com/odlgroup/odl). Thanks to their work.
 
 <!--
+
 ## Citation
 ```
-
+@inproceedings{fu20243dgr,
+  title={3DGR-CAR: Coronary artery reconstruction from ultra-sparse 2D X-ray views with a 3D Gaussians representation},
+  author={Fu, Xueming and Li, Yingtai and Tang, Fenghe and Li, Jun and Zhao, Mingyue and Teng, Gao-Jun and Zhou, S Kevin},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={14--24},
+  year={2024},
+  organization={Springer}
+}
 ```
 -->
