@@ -49,6 +49,8 @@ $ conda activate 3dgs-car
 $ pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1
   
 $ pip install -r requirements.txt
+$ cd 3dgs-car
+$ git clone --recursive https://github.com/graphdeco-inria/diff-gaussian-rasterization.git
 $ pip install -e gaussian-splatting/submodules/diff-gaussian-rasterization/
 $ pip install -e gaussian-splatting/submodules/simple-knn/
   
