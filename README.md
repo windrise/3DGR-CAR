@@ -43,12 +43,12 @@ $ cd 3DGR-CAR
 ```
 
 ```
-  # it is recommanded to use conda
+# it is recommanded to use conda
 $ conda create -n 3dgs-car python=3.9
 $ conda activate 3dgs-car
   
-  # install dependencies(you can adjust according to your demand)
-  # torch 2.0.0 + cuda 11.7
+# install dependencies(you can adjust according to your demand)
+# torch 2.0.0 + cuda 11.7
 $ pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1
   
 $ pip install -r requirements.txt
