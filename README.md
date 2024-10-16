@@ -88,6 +88,7 @@ We use public dataset from [ASOCA](https://asoca.grand-challenge.org/) and [Imag
 
 ```python
 $ unzip ToyData.zip
+# 3D Gaussian Representation from FBP result.
 $ python train.py
 ```
 
