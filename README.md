@@ -94,15 +94,6 @@ $ python train.py
 
 
 
-
-
-### Cuda Version!!!
-
-```python
-# Modify the Path to 'discretize_grid.cu' in 'utils/Compute_intensity.py'.
-# Compilation is required for first use, which takes a long time.
-
-
 ```
 
 ## 🤝Acknowledgement
