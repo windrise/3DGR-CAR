@@ -33,7 +33,7 @@ Reconstructing 3D coronary arteries is important for coronary artery disease dia
 
 
 
-## Installation
+## Demo code
 
 ### Cloning the Repository
 
@@ -87,7 +87,8 @@ We use public dataset from [ASOCA](https://asoca.grand-challenge.org/) and [Imag
 
 
 ```python
-python train.py
+$ unzip ToyData.zip
+$ python train.py
 ```
 
 
