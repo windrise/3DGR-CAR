@@ -93,15 +93,11 @@ $ python train.py
 ```
 
 
-
-
-```
-
 ## 🤝Acknowledgement
 
 Our repo is built upon [Gasussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting), [Splat image](https://github.com/szymanowiczs/splatter-image), [NeRP](https://github.com/liyues/NeRP) and [ODL](https://github.com/odlgroup/odl). Thanks to their work.
 
-<!--
+
 
 ## Citation
 ```
@@ -114,4 +110,3 @@ Our repo is built upon [Gasussian Splatting](https://github.com/graphdeco-inria/
   organization={Springer}
 }
 ```
--->
