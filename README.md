@@ -5,7 +5,7 @@
 Authors: Xueming Fu, Yingtai Li, Fenghe Tang, Jun Li, Mingyue Zhao, Gao-Jun Teng and S. Kevin Zhou
 
 
-[![arxiv paper](https://img.shields.io/badge/arxiv-paper-orange)]([https://github.com/windrise/3DGR-CAR/tree/main](https://arxiv.org/abs/2410.00404))
+[![arxiv paper](https://img.shields.io/badge/arxiv-paper-orange)](https://arxiv.org/abs/2410.00404)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![authors](https://img.shields.io/badge/by-windrise-green)](https://github.com/windrise)
 
